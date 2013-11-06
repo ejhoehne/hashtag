@@ -1,11 +1,50 @@
+html{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 body {
 	background: overflow-x: hidden;
 	overflow-y: hidden;
 	background: #3C3C34/*4C4C4B*/;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
 	font-size: 13px;
-	padding-top: 195px;
+	padding-top: 0;
 	height: 100%;
 	margin: 0;
 	color: white;;
+}
+.trendingHashtags {
+	list-style-type: none;
+	display: inline;
+	margin: 0 auto;
+
+}
+ul {
+	font-family: 'Londrina Sketch', cursive;
+	font-size: 100px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.hash1 {
+	color: #5C995C;
+
+
+}
+.hash2 {
+	color: #7094FF;
+
+}
+
+.hash3 {
+	color: #D63333;
+
+}
+.hash4 {
+	color: #CC7A29;
+
 }
