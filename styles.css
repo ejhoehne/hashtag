@@ -1,0 +1,74 @@
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background: #3C3C34/*4C4C4B*/;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+	font-size: 13px;
+	padding-top: 195px;
+	height: 100%;
+	margin: 0;
+	color: white;
+}
+.container {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.login{
+	margin-bottom: 10px;
+	margin-top: 10;
+}
+.loginBox {
+	float: left;
+	width: 100%; 
+	margin: 0 0 12px 0;
+	position: relative;
+	line-height: 25px;
+}
+input {
+	width: 50%%;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 20px;
+	font-size: 17px;
+	padding:10px;
+}
+p {
+	font-family: 'Cookie', cursive;
+	font-size: 30px;
+	margin:0 auto;
+	color: whitesmoke;
+}
+.chirp {
+	font-family:'Londrina Sketch', cursive;
+	font-size: 100px;
+	color: #FFFF94;
+}
+.loginPrompts {
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	font-size: 15px;
+
+
+}
+.loginToHome {
+	/*border-radius: 20px;
+	color: #3C3C34; 
+	background-color: whitesmoke;*/
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FA2;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-family:'Roboto Condensed',Arial,sans-serif;
+	font-size:16px;
+	font-weight:700;
+	height:40px;
+	padding:4px 16px;
+	text-shadow:#FE6 0 1px 0;
+}
+}
