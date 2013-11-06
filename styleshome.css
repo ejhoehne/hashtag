@@ -1,0 +1,11 @@
+body {
+	background: overflow-x: hidden;
+	overflow-y: hidden;
+	background: #3C3C34/*4C4C4B*/;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+	font-size: 13px;
+	padding-top: 195px;
+	height: 100%;
+	margin: 0;
+	color: white;;
+}
