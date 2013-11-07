@@ -19,32 +19,41 @@ body {
 }
 .trendingHashtags {
 	list-style-type: none;
-	display: inline;
+	display: inline-table;
 	margin: 0 auto;
+	float: left;
+	font-size: 50px;
+	font-family: 'Londrina Sketch', cursive;
+	text-align: center;
 
 }
 ul {
-	font-family: 'Londrina Sketch', cursive;
-	font-size: 100px;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+	display: inline;
+	text-align: center;
 }
 .hash1 {
 	color: #5C995C;
+	border: 2px solid #5C995C;
+	text-align: center;
 
 
 }
 .hash2 {
 	color: #7094FF;
+	border: 2px solid #7094FF;
+	text-align: center;
 
 }
 
 .hash3 {
 	color: #D63333;
+	border: 2px solid #D63333;
+	text-align: center;
 
 }
 .hash4 {
 	color: #CC7A29;
+	border: 2px solid #CC7A29;
+	text-align: center;
 
 }
