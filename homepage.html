@@ -14,7 +14,7 @@
 <body ng-app='chirpApp'>
 	<div ng-controller= 'chirpController'class= "homeContainer">
 		<li ng-repeat= "trend in trends|orderBy:sort" class= "trendingHashtags">
-		<ul class= "hash1" ng-src= "{{trend.name}}"></ul>
+		<ul class= "hash1">{{trends.name}}</ul>
 		</li>
 	</div>
 

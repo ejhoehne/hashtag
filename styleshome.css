@@ -33,27 +33,6 @@ ul {
 }
 .hash1 {
 	color: #5C995C;
-	border: 2px solid #5C995C;
+	border: none;
 	text-align: center;
-
-
-}
-.hash2 {
-	color: #7094FF;
-	border: 2px solid #7094FF;
-	text-align: center;
-
-}
-
-.hash3 {
-	color: #D63333;
-	border: 2px solid #D63333;
-	text-align: center;
-
-}
-.hash4 {
-	color: #CC7A29;
-	border: 2px solid #CC7A29;
-	text-align: center;
-
 }
