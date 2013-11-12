@@ -13,10 +13,10 @@
 </head>
 <body ng-app='chirpApp'>
 	<div ng-controller= 'chirpController'class= "homeContainer">
-		<section ng-model= 'trend.name'></section>
-		<li ng-repeat= "trend in trends|orderBy:sort" class= "trendingHashtags">
-		<ul class= "hash1">{{trends.name}}</ul>
-		</li>
+		<!-- <section ng-model= 'trends.name'></section> -->
+		<ul ng-repeat= "trend in trends" class= "trendingHashtags">
+		<li class= "hash1">{{trend.name}}</li>
+		</ul>
 	</div>
 	<form method="get" action="http://www.google.com/search">
 	<!-- <div style="border:1px solid black;padding:4px;width:20em;"> -->

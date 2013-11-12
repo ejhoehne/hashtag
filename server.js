@@ -35,11 +35,30 @@ var T = new twit ({
   // var req2 = client.plus.people.get({ userId: '+burcudogan' });
   // req2.execute();
 // });
+app.use(function(req, res, next){
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, POST');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+  });
+
     app.get('/trends', function(req, res){
-      T.get("trends/current", {id: 1}, function(err, response) {
-        res.send('done');
+      T.get("trends/place", {id: 1}, function(err, response) {
+        if (err) {
+          res.send('error');
+        }
+        else {
+          // var trends= [];
+          // for (var i= 0; i < response[0].trends.length; i++){
+          //   trends.push(response[0].trends[i].name);
+          // }
+          res.send(response[0].trends);
+        }
+      // res.send(trends);
 
 });
 
+
     });
+
 app.listen(8900);
