@@ -20,24 +20,26 @@ var T = new twit ({
  // twit.stream('statuses.hashtag/sample', function(stream) {
  //   stream.on('data', function (data) {
  //     console.log(data);
- //   });
- // });
-var stream = twit.stream('statuses/filter', {'track': ['#BYU']});
 
-stream.on('tweet', function (tweet) {
-    console.log(tweet);
-});
-googleapis
-    .discover('urlshortener', 'v1')
-    .discover('plus', 'v1')
-    .execute(function(err, client) {
-  var params = { shortUrl: 'http://goo.gl/DdUKX' };
-  var req1 = client.urlshortener.url.get(params);
-  req1.execute(function (err, response) {
-    console.log('Long url is', response.longUrl);
-  });
 
-  var req2 = client.plus.people.get({ userId: '+burcudogan' });
-  req2.execute();
+// googleapis
+//     .discover('urlshortener', 'v1')
+//     .discover('plus', 'v1')
+//     .execute(function(err, client) {
+//   var params = { shortUrl: 'http://goo.gl/DdUKX' };
+//   var req1 = client.urlshortener.url.get(params);
+//   req1.execute(function (err, response) {
+//     console.log('Long url is', response.longUrl);
+//   });
+
+  // var req2 = client.plus.people.get({ userId: '+burcudogan' });
+  // req2.execute();
+// });
+    app.get('/trends', function(req, res){
+      T.get("trends/current", {id: 1}, function(err, response) {
+        res.send('done');
+
 });
+
+    });
 app.listen(8900);
