@@ -15,7 +15,7 @@ body {
 	padding-top: 0;
 	height: 100%;
 	margin: 0;
-	color: white;;
+	color: white;
 }
 .trendingHashtags {
 	list-style-type: none;
@@ -35,4 +35,18 @@ ul {
 	color: #5C995C;
 	border: none;
 	text-align: center;
+}
+form {
+	text-align: center;
+	border-radius: 5px;
+	line-height: 20px;
+	font-size: 17px;
+	padding: 10px;
+	height: -100px
+	float: left;
+	width: 100%; 
+	margin: 0 0 12px 0;
+	position: absolute;
+	line-height: 25px;;
+
 }

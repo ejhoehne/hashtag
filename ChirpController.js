@@ -1,5 +1,5 @@
 app.controller('chirpController', function($scope){
-	$.getJSON('https://api.twitter.com/1.1/trends/current.json', function(response){
+	$.getJSON('https://localhost:8900/trends/place.json?id=1', function(response){
 		$scope.trends=response.results;
 		$scope.$apply();
 	});
