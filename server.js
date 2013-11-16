@@ -3,7 +3,7 @@ var twit= require('twit');
 var express= require('express');
 var app= express();
 app.use(express.bodyParser());
-var googleapis= require ('googleapis');
+var google = require('google');
 
 
 // var twit = new twitter({
@@ -22,19 +22,6 @@ var T = new twit ({
  //     console.log(data);
 
 
-// googleapis
-//     .discover('urlshortener', 'v1')
-//     .discover('plus', 'v1')
-//     .execute(function(err, client) {
-//   var params = { shortUrl: 'http://goo.gl/DdUKX' };
-//   var req1 = client.urlshortener.url.get(params);
-//   req1.execute(function (err, response) {
-//     console.log('Long url is', response.longUrl);
-//   });
-
-  // var req2 = client.plus.people.get({ userId: '+burcudogan' });
-  // req2.execute();
-// });
 app.use(function(req, res, next){
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, POST');
@@ -43,22 +30,48 @@ app.use(function(req, res, next){
   });
 
     app.get('/trends', function(req, res){
-      T.get("trends/place", {id: 1}, function(err, response) {
+      T.get("trends/place", {id: 1}, function(err, response) 
+      {
         if (err) {
           res.send('error');
         }
-        else {
-          // var trends= [];
+        else 
+        {
+           // var trends= [];
           // for (var i= 0; i < response[0].trends.length; i++){
-          //   trends.push(response[0].trends[i].name);
-          // }
-          res.send(response[0].trends);
+          //   trends.push(response[0].trends[i].name); Put google's search api here and return first few 
+            
+
+            // google.resultsPerPage = 3;
+            // var nextCounter = 0;
+
+            // google(trends, function(err, next, links)
+            // {
+            // if (err) console.error(err);
+
+            // for (var i = 0; i < links.length; ++i) 
+            // {
+            // console.log(links[i].title + ' - ' + links[i].link); //link.href is an alias for link.link
+            // console.log(links[i].description + "\n");
+            // }
+
+            // if (nextCounter < 4) 
+            // {
+            // nextCounter += 1;
+            // if (next) next();
+            // }
+
+            // });
         }
+        res.send(response[0].trends);
+
+      });
+          
+        
       // res.send(trends);
 
 });
 
 
-    });
-
 app.listen(8900);
+console.log('listen');
