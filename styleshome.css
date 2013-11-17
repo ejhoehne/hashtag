@@ -5,27 +5,21 @@ html{
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	/*background-color: #3C3C34;*/
+	background-color: #3C3C34;
 	/*background-color: #FF5C21;*//*DE3D07*/
-	/*background-size: 50px 50px;
-background-color: #f90;
-background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-background-image: -moz-linear-gradient(0deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-background-image: linear-gradient(90deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
--pie-background: linear-gradient(90deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) 0 0 / 50px 50px #f90;
-behavior: url(/pie/PIE.htc);*/
+/*	background-size: 50px 50px;
 background-size: 50px 50px;
 background-color: #0ae;
 background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
 background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
 background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
 -pie-background: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) 0 0 / 50px #0ae;
-behavior: url(/pie/PIE.htc);
+behavior: url(/pie/PIE.htc);*/
 }
 body {
 	background: overflow-x: hidden;
 	overflow-y: hidden;
-/*	background: #3C3C34/*4C4C4B;*/
+	background: #3C3C34/*4C4C4B;*/
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
 	font-size: 13px;
 	padding-top: 0;
