@@ -23,7 +23,11 @@
 	<div ng-controller= 'chirpController'class= "homeContainer">
 		<!-- <section ng-model= 'trends.name'></section> -->
 		<ul ng-repeat= "trend in trends" class= "trendingHashtags">
-		<li class= "hash1">{{trend.name}}</li>
+		<li class= "hash1">{{trend.name}} 
+			<div ng-repeat= "result in trend.results">
+				<a href= "{{result.link}}">{{result.title}}</a>
+			</div>
+		</li>
 		</ul>
 	</div>
 
