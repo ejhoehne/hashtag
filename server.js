@@ -1,3 +1,4 @@
+// var twitter = require('ntwitter');
 var twit= require('twit');
 var express= require('express');
 var app= express();
@@ -5,13 +6,20 @@ app.use(express.bodyParser());
 var google = require('google');
 
 
+// var twit = new twitter({
 var T = new twit ({
   consumer_key: 'V2JVP3eS6cXDZc1HhbVmWw',
   consumer_secret: '2o0QFu2kSNwUfq7y1YogPgSRWfEsyBBkonUenI',
   access_token: '235698707-2Z41xL3OcE4R45Edb728yI10Ju9oL2tRU3k0tRlM',
   access_token_secret: '5rvNzRbEi7CQLysd187w1FWfz4XVmBp69nmAqT0Bw9DW3'
 });
+// twit.get('http://www.twitter.com/trends/current.json', {include_entities:true}, function(data) {
+//     console.log(data);
+// });
 
+ // twit.stream('statuses.hashtag/sample', function(stream) {
+ //   stream.on('data', function (data) {
+ //     console.log(data);
 
 
 app.use(function(req, res, next){
@@ -21,10 +29,10 @@ app.use(function(req, res, next){
   next();
   });
 
-app.get('/trends', function(req, res)
-  {
-    T.get("trends/place", {id: 1}, function(err, response)
-    {
+     app.get('/trends', function(req, res)
+     {
+       T.get("trends/place", {id: 1}, function(err, response)
+       {
          if (err)
          {
            res.send('error');
@@ -32,54 +40,13 @@ app.get('/trends', function(req, res)
          else
          {
              var trends= [];
-             var googleSearchResults= 30; 
-              for (var i= 0; i < response[0].trends; i++)
-            {
-              trends.push(response[0].trends[i].name);
-              function getGoogleSearchResults(res, response[0].trends;i++)
-              {
+            for (var i= 0; i < response[0].trends.length; i++){
 
-                google.resultsPerPage = 25;
-                var nextCounter = 0;
-
-                google(trends, function(err, next, links)
-                {
-                  if (err) console.error(err);
-
-                  for (var i = 0; i < links.length; ++i) 
-                  {
-                    console.log(links[i].title + ' - ' + links[i].link); //link.href is an alias for link.link
-                    console.log(links[i].description + "\n");
-                  }
-
-                  if (nextCounter < 4)
-                  {
-                    nextCounter += 1;
-                    if (next) next();
-                  }
-                }
-                    function getGoogleSearchResults(res, trends, index)
-                  {
-                      google(trends[index].name, function(result)
-                      {
-                        googleSearchCount++; 
-                        for (var i= 0; i < response[0].trends.length; i++)
-                        {
-                          trends[index].results= results[j];
-                        }
-                        if (googleSearchCount== trends.length)
-                        {
-                          res.send(response[0].trends);
-
-                        }
-                      });
-                    });
-
-              }
-            
+              trends.push(response[0].trends[i].name); //Put google's search api here and return first few 
 
          }
-         
+         res.send(response[0].trends);
+
        }
           
         
@@ -88,6 +55,9 @@ app.get('/trends', function(req, res)
 
   });
       });
+
+
+
 
 
 app.listen(8900);
