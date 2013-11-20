@@ -79,7 +79,7 @@ ul {
 	/*padding: 0 200px 0 200px;*/
 	position: relative;
 	font-family:'Roboto Condensed',Arial,sans-serif; 
-	font-size: 50px;
+	font-size: 30px;
 	/*margin: 0 auto;*/
 	/*background-color: whitesmoke;*/
 	/*width: 100%;*/
@@ -123,6 +123,9 @@ a {
 	text-align: center;
 	font-family:'Roboto Condensed',Arial,sans-serif; 
 	font-size: 30px;
+	text-shadow: none;
+	font-weight: normal;
+	width: 100%;
 }
 a:hover {
 	color:#6C8CD5;

@@ -52,8 +52,7 @@ app.get('/trends', function(req, res)
       googleSearchResultCount++;
       if (err) {
         // google failed to give us search results
-        // trend.results = [];
-        trend.results= pastTrends;
+        trend.results = [];
       }
       else {
         // google gave us good search results
@@ -65,7 +64,6 @@ app.get('/trends', function(req, res)
       if (googleSearchResultCount >= trends.length) {
         res.send(trends);
       }
-      var pastTrends= res.send(trends);
     });
   }
 });
