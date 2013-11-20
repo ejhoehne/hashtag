@@ -6,6 +6,7 @@ html{
 	font: inherit;
 	vertical-align: baseline;
 	background-color: #3C3C34;
+	width: 100%;
 	/*background-color: #FF5C21;*//*DE3D07*/
 /*	background-size: 50px 50px;
 background-size: 50px 50px;
@@ -19,13 +20,14 @@ behavior: url(/pie/PIE.htc);*/
 body {
 	background: overflow-x: hidden;
 	overflow-y: hidden;
-	background: #3C3C34/*4C4C4B;*/
+	background: #3C3C34; 
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
 	font-size: 13px;
 	padding-top: 0;
 	height: 100%;
-	margin: 0;
+	margin: 0 auto;
 	color: white;
+	width: 100%;
 }
 .trendingHashtags {
 	list-style-type: none;
@@ -35,42 +37,68 @@ body {
 	font-size: 50px;
 	font-family: 'Londrina Sketch', cursive;
 	text-align: center;
+	width: 100%;
 
 }
 h1 {
 	text-align: center;
 	font-family: 'Londrina Sketch', cursive;
 	color: #FFFF94;
-	font-size: 120px;
-	margin-bottom: 10px;
+	font-size: 150px;
 	font-weight: normal;
+	width: 100%;
+	padding-bottom: none;
+	margin: 0;
 
 }
 
 p {
 	font-family: 'Cookie', cursive;
-	color: whitesmoke;
+	color: #6C8CD5;
 	font-size: 40px;
 	text-align: center;
-	margin: 0 auto;
-	text-shadow: 0px 5px 8px #555;
+	margin: 0 auto; 
+	width: 100%;
+	padding-top: none;
+	padding-bottom: 35px;
 }
 ul {
-	display: block;
+	display: inline;
 	text-align: center;
-	float: left;
+	/*float: left;*/
+	/*margin: 0 auto;*/
+	/*width: 100%;*/
+
 }
 
 .hash1 {
-	color: #FA2;
+	/*color: /*#FA2*//*#BE95D5*/#FF7400;*/
 	border: none;
 	text-align: center;
-	display: block;
+	display: inline;
 	/*padding: 0 200px 0 200px;*/
 	position: relative;
-	font-family:'Roboto Condensed',Arial,sans-serif;
-	font-size: 30px;
-	margin-top: 25px;
+	font-family:'Roboto Condensed',Arial,sans-serif; 
+	font-size: 50px;
+	/*margin: 0 auto;*/
+	/*background-color: whitesmoke;*/
+	/*width: 100%;*/
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FA2;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+/*	font-size:16px;
+*/	font-weight:700;
+	height:40px;
+	padding:4px 16px;
+	text-shadow:#FE6 0 1px 0;
+}
+
 
 }
 
@@ -83,17 +111,20 @@ form {
 	height: -100px
 	float: left;
 	width: 100%; 
-	margin: 0 50px 0 50px;
+	/*margin: 0 auto;*/
 	position: absolute;
-	line-height: 25px;;
+/*	line-height: 25px;;
+*/
 
 }
 a {
-	color: pink;
+	color: whitesmoke;
 	text-decoration: none;
 	text-align: center;
+	font-family:'Roboto Condensed',Arial,sans-serif; 
+	font-size: 30px;
 }
 a:hover {
-	color: purple;
+	color:#6C8CD5;
 	text-decoration: none;
 }
